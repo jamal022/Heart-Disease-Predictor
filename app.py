@@ -5,7 +5,7 @@ import pickle
 
 #Initialize the flask App
 app = Flask(__name__,template_folder='template')
-model = pickle.load(open('C:\\Users\\gamal\\Downloads\\ITI Training\\Final Project\\heart_disease.pickle', 'rb'))
+model = pickle.load(open('heart_disease.pickle', 'rb'))
 
 #default page of our web-app
 @app.route('/')
